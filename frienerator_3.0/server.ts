@@ -18,7 +18,7 @@ app.use(function (req, res, next) {
     next()
 })
 
-app.use( `/`, router);
+app.use('/', api);
 
 app.listen(port , function () {
     console.log(`listening on ${port}`);
